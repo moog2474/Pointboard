@@ -57,26 +57,26 @@
         contentDiv.appendChild(taskInput4);
 
 
-        const task_actions_div= document.createElement("div");
-        task_actions_div.classList.add("actions");
-        taskDiv.appendChild(task_actions_div);
+        const actionDiv= document.createElement("div");
+        actionDiv.classList.add("actions");
+        taskDiv.appendChild(actionDiv);
 
 
         const editBtn= document.createElement("button");
         editBtn.classList.add("Edit");
         editBtn.innerHTML = "&#9997;";
 
-        const task_delete_button= document.createElement("button");
-        task_delete_button.classList.add("Delete");
-        task_delete_button.innerHTML = "&#10006;";
+        const delBtn= document.createElement("button");
+        delBtn.classList.add("Delete");
+        delBtn.innerHTML = "&#10006;";
 
-        const task_completed_button= document.createElement("button");
-        task_completed_button.classList.add("Completed");
-        task_completed_button.innerHTML = "&#10004;";
+        const completedBtn= document.createElement("button");
+        completedBtn.classList.add("Completed");
+        completedBtn.innerHTML = "&#10004;";
 
         contentDiv.appendChild(editBtn);
-        contentDiv.appendChild(task_completed_button);
-        contentDiv.appendChild(task_delete_button);
+        contentDiv.appendChild(completedBtn);
+        contentDiv.appendChild(delBtn);
         
 
         editBtn.addEventListener('click', ()=>{
@@ -111,7 +111,7 @@
             }
         });
 
-        task_delete_button.addEventListener('click', ()=>{
+        delBtn.addEventListener('click', ()=>{
             if (confirm("Итгэлтэй байна уу?")) {
                 list.removeChild(taskDiv);
             
@@ -120,7 +120,7 @@
             }
         })
         
-        task_completed_button.addEventListener('click', ()=>{
+        completedBtn.addEventListener('click', ()=>{
 
                 taskInput1.style.textDecoration="line-through";
                 taskInput1.style.backgroundColor="green";
