@@ -1,0 +1,73 @@
+#task-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+header{
+    border-right: 2px solid rgb(38, 70, 83);
+    width: 35%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+header #task-submit1{
+    background-color: rgb(244, 162, 97);
+    border:none;
+    box-shadow: 2px 2px 3px black,
+    -2px -2px 3px red; 
+    margin-top: 5px;
+
+}
+.flex, .container{
+    display: flex;
+}
+
+body{
+    background-color: rgb(38, 70, 83);
+}
+.container{
+    max-width: 1200px;
+    background-color: rgb(42, 157, 143);
+    margin: 0 auto;
+
+}
+
+input, select{
+    border: none;
+    background-color: rgb(233, 196, 106);
+    border-bottom: 2px solid black;
+    padding: 10px;
+    font-weight: 600;
+}
+select{
+    width: 100%;
+}
+
+h1{
+    border-bottom: 2px solid rgb(231, 111, 81);
+    color: rgb(38, 70, 83)
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 20px;
+}
+.content{
+    display: flex;
+    gap: 5px;
+}
+.content input{
+    width: 80px;
+    background-color: rgb(231, 111, 81);
+}
+
+.content button{
+    background-color: rgb(56, 216, 163);
+    border: none;
+    box-shadow: inset 2px 2px 3px rgb(38, 70, 83),
+    inset -2px -2px 3px rgb(38, 70, 83); 
+}
